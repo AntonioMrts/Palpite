@@ -1,0 +1,207 @@
+<!doctype html> 
+<html lang="pt-BR"> 
+<head>
+  <meta charset="UTF-8">
+  <title>Palpite - Página Inicial</title>
+
+  <style>
+    body {
+      background-color: black;
+      color: white; /* Define a cor do texto como branca */
+      margin: 0;
+      padding: 0;
+      text-align: center; /* Centraliza o conteúdo dentro da página */
+    }
+    
+    .logo {
+      width: 50px; /* Ajusta a largura da imagem da logo */
+    }
+
+    .logo-text {
+      margin-top: 5px; /* Espaço entre a imagem e o texto */
+      font-size: 18px; /* Tamanho da fonte para o texto abaixo da imagem */
+      color: #ffffff; /* Cor do texto */
+    }
+
+    .perfil {
+      position: absolute; /* Posiciona a imagem de perfil de forma absoluta */
+      top: 20px; /* Distância do topo da página */
+      left: 10px; /* Distância da esquerda da página */
+      width: 50px; /* Largura da imagem de perfil */
+      height: auto; /* Mantém a proporção da imagem */
+      border-radius: 50%; /* Torna a imagem circular */
+    }
+
+    nav {
+      background-color: #141516;
+      /* background-color: #DDEEF5; */
+      padding: 8px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+    }
+
+    nav ul {
+      list-style-type: none; /* Remove os marcadores de lista */
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center; /* Centraliza os itens do menu */
+    }
+
+    nav ul li {
+      margin: 0 15px; /* Espaço entre os links */
+    }
+
+    nav ul li a {
+      display: inline-block; 
+      padding: 5px 20px; /* Define o tamanho do botão */
+      background-color: #252440; /* Cor de fundo dos botões */
+      color: white; /* Cor do texto dos botões */
+      text-decoration: none; /* Remove sublinhado dos links */
+      border-radius: 25px; /* Deixa as bordas arredondadas */
+      font-size: 16px; /* Tamanho da fonte */
+      transition: background-color 0.3s ease; /* Adiciona uma transição suave ao passar o mouse */
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline; 
+    }
+
+    /* Container para logo e perfil */
+    .header-content {
+      margin-top: 10px; /* Espaço entre o topo da página e a logo */
+    }
+
+    .conteudo-pagina {
+      margin-top: 20px;
+      font-size: 18px; 
+      color: #ffffff;
+    }
+    .filmes-container {
+      display: flex;
+      justify-content: center; /* Centraliza as imagens horizontalmente */
+      gap: 50px; /* Espaçamento entre as imagens */
+      margin-top: 20px;
+    }
+    .filme {
+      width: 150px;
+      height: auto;
+    }
+
+    .descricao-filmes {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #cccccc;
+      text-align: center;
+    }
+
+    .artista-container {
+      display: inline-block;
+      align-items: center;
+      justify-content: center; /* Centraliza o conteúdo horizontalmente */
+      margin-top: 20px;
+    }
+
+    .artista {
+      width: 200px;
+      margin-right: 20px; /* Espaço entre a imagem e o texto */
+    }
+
+    .artista-descricao {
+      max-width: 400px;
+      text-align: center;
+      color: #cccccc;
+      font-size: 16px;
+    }
+
+    footer {
+    text-align: center;
+    padding: 6px;
+    background-color: #171616;
+    /* background-color: #2e2d4b; */
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    }
+
+    hr {
+    border-color: #282727;
+    }
+
+    footer a {
+    text-decoration: none;
+    }
+
+    .organizado ol {
+        display: inline-block;
+    }
+   
+    /* .organizado li {
+      display: inline-block;
+      margin-right: 16px;
+      text-align: center;
+    }
+     */
+  </style>
+
+</head>
+<body>
+  <header>
+    <a href="/perfil.html">
+      <img src="perfilpensa.jpg" class="perfil" alt="Imagem de Perfil">
+    </a>
+    <!-- Insere a logo no cabeçalho da página -->
+    <div class="header-content">
+      <img src="imagemlogo.png" class="logo" alt="Logo do site">
+      <p class="logo-text">palpite</p>
+    </div>
+    <!-- Linka os botões do menu em suas respectivas telas -->
+    <nav>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="/TALES TRABALHO/TRABALHO.html#filmes">Filmes</a></li>
+        <li><a href="/TALES TRABALHO/TRABALHO.html#series">Séries</a></li>
+        <li><a href="/TALES TRABALHO/TRABALHO.html#jogos">Jogos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="conteudo-pagina">
+    <h1>Melhores avaliados da semana</h1>
+
+    <div class="filmes-container">
+      <img src="filmecinco.jpg" class="filme" alt="Filme 1">
+      <img src="filmecerto.jpg" class="filme" alt="Filme 2">
+      <img src="filmeteste.jpg" class="filme" alt="Filme 3">
+      <img src="filmedois.jpg" class="filme" alt="Filme 4">
+      <img src="serie.jpg" class="filme" alt="Filme 5">
+      <img src="jogoum.jpg" class="filme" alt="Filme 6">
+    </div>
+    <p class="descricao-filmes">
+      Aqui estão os melhores avaliados da semana! Clique nas obras para avaliar e ver avaliações de amigos.
+    </p>
+
+    <h2>Artistas mais bem avaliados da semana</h2>
+
+    <div class="artista-container">
+      <img src="filmeainda.jpg" class="artista" alt="Imagem do Artista">
+      <p class="artista-descricao">
+        Selton Melo é um artista brasileiro que esta semana recebeu centenas de avaliações positivas a cerca do seu último filme: "Ainda estou Aqui". O Brasil não ganhava um troféu na seleção oficial no festival italiano desde 1981, quando foi premiado por “Eles não usam Black-tie”, de Leon Hirszman.
+      </p>
+    </div>
+
+    <section>
+      <ol>
+        <li>Contato</li>
+        <li>Ferramentas</li>
+        <li>Suporte</li>
+      </ol>
+    </section>
+  </main> 
+
+  <footer>
+    <p>&copy; 2024 Palpite - Todos os direitos reservados | <a href="/politicas-de-privacidade.html">Política de Privacidade</a></p>
+  </footer>
+</body>
+</html>
+
+  

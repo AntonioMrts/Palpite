@@ -1,0 +1,171 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #22313f;
+    color: #fff;
+}
+header {
+    background-color: rgb(32, 32, 32);
+    text-align: center;
+    padding: 20px;
+}
+header h1 {
+    margin-bottom: 0.5em;
+}
+header h2 {
+    margin-top: 0;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+    position: fixed;
+    top: 0; /* 0 pixels do topo */
+    left: 10%; /* 50% da largura da janela */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    background-color: #171212aa;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+hr {
+    border: 1px solid rgb(255, 255, 255);
+}
+main {
+    padding: 20px;
+    text-align: justify;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.imagem-container {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.img {
+    border: 3px solid #353535;
+    border-radius: 5px;
+    max-width: 188px;
+    height: auto;
+}
+.descricao {
+    padding-left: 20px;
+    flex: 1;
+}
+.edit {
+    background-color: rgb(32, 32, 32);
+    border-radius: 15px;
+    display: inline-block;
+    font-size: large;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+footer {
+    background-color: rgb(32, 32, 32);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0;
+}
+form input, form select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+}
+
+
+
+
+
+/* Aqui fica a estilização do movimento das imagens */
+#caco {
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+#caco:hover {
+    transform: translateY(-20px); 
+}
+
+.Teste:hover #caco {
+    opacity: 0.5; 
+}
+
+.Teste #caco:hover {
+    opacity: 1; 
+}
+
+
+/* botão */
+#caquinho {
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+#caquinho:hover {
+    transform: translateY(-5px); 
+}
+
+.Teste:hover #caquinho {
+    opacity: 0.5; 
+}
+
+.Teste #caquinho:hover {
+    opacity: 1; 
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
